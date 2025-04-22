@@ -79,6 +79,10 @@ def test(args):
                 os.makedirs(save_dir)
             imageio.imwrite(res_path, decoded.astype(np.uint8))
 
+            # Save raw class map (for analysis / eye-tracking alignment)
+            classmap_path = os.path.join(save_dir, img_name.replace('.png', '_classmap.npy'))
+            np.save(classmap_path, pred)
+
             print(" Frame {0:2d}   RunningTime/Latency={1:3.5f} s".format(i + 1, elapsed_time))
 
     print("---------------------")
