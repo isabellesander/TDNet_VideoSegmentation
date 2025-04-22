@@ -1,0 +1,9 @@
+# macOS temporary files
+._*
+**/.DS_Store
+
+# Windows temporary files
+Thumbs.db
+
+# Image Files
+*.jpg
