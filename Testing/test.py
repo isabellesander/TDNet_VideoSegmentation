@@ -100,13 +100,13 @@ if __name__ == "__main__":
                         default="./output/", help="Path_to_Save")
 
     parser.add_argument("--_td4_psp18_path", nargs="?", type=str,
-                        default="./checkpoint/td4-psp18.pkl", help="Path_to_PSP_Model")
+                        default="./checkpoints/td4-psp18.pkl", help="Path_to_PSP_Model")
 
     parser.add_argument("--_td2_psp50_path", nargs="?", type=str,
-                        default="./checkpoint/td2-psp50.pkl", help="Path_to_PSP_Model")
+                        default="./checkpoints/td2-psp50.pkl", help="Path_to_PSP_Model")
 
     parser.add_argument("--_psp101_path", nargs="?", type=str,
-                        default="./checkpoint/psp101.pkl", help="Path_to_PSP_Model")
+                        default="./checkpoints/psp101.pkl", help="Path_to_PSP_Model")
 
     parser.add_argument("--gpu", nargs="?", type=str, default='0', help="gpu_id")
 

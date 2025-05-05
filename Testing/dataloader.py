@@ -109,3 +109,4 @@ class cityscapesLoader:
         rgb[:, :, 1] = g
         rgb[:, :, 2] = b
         return rgb
+
